@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import CartWidget from ".NavBar/CartWidget";
+import CartWidget from "../CartWidget";
 
 function NavBar() {
   return (
@@ -12,7 +12,7 @@ function NavBar() {
         <a href="#">Enlace3</a>
       </nav>
       <CartWidget>
-        <img src="#"/>
+        <img src="#" />
       </CartWidget>
     </header>
   );
