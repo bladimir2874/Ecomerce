@@ -1,13 +1,20 @@
+
+import React from "react";
+import "./App.css";
+
+import Promesa from "./Promesa";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./container/ItemListContainer";
 
 function App() {
-  console.log("Hola a");
+  let greeting = "Bienvenido a la tienda";
   return (
-    
     <div>
       <NavBar />
-      <ItemListContainer saludo="hola desde la app!" />
+      <ItemListContainer title={greeting} />
+
+      {/* al componente "Promesa" deberian pasalrlo a <ItemList> e incluirlo dentro de ItemListContainer */}
+      <Promesa />
     </div>
   );
 }
