@@ -1,19 +1,19 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
-import Promesa from "./Promesa";
-import NavBar from "./components/NavBar/NavBar";
+import Promesa from './Promesa';
+import NavBar from './components/NavBar';
 import ItemListContainer from "./container/ItemListContainer";
 
 function App() {
   let greeting = "Bienvenido a la tienda";
   return (
     <div>
-      <NavBar />
+      <NavBar/> 
       <ItemListContainer title={greeting} />
 
       {/* al componente "Promesa" deberian pasalrlo a <ItemList> e incluirlo dentro de ItemListContainer */}
-      <Promesa />
+      <Promesa/>
     </div>
   );
 }
