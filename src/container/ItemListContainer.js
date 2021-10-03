@@ -1,4 +1,5 @@
 import React from "react";
+import ItemCount from "../components/ItemCount";
 
 const ItemListContainer = (props) => {
   return (
@@ -10,6 +11,7 @@ const ItemListContainer = (props) => {
           </h1>
           <hr />
         </div>
+        <ItemCount stock={14} initial={1} />
       </div>
     </section>
   );
